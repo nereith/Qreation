@@ -1,6 +1,5 @@
 class User < ApplicationRecord
-	validates :question, presentence: true
-	validates :answer, presentence: true
-	validates :ref1, presentence: true
+	validates :name, presence: true
+	validates :email, presence: true
 	has_many :quizzes
 end

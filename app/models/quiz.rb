@@ -1,5 +1,5 @@
 class Quiz < ApplicationRecord
-	validates :name, presentence: true
-	validates :email, presentence: true
-	belongs_to :user
+	validates :question, presence: true
+	validates :answer, presence: true
+	validates :ref1, presence: true
 end
